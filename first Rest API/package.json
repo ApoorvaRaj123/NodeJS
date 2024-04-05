@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "name": "first-rest-api",
+  "version": "1.0.0",
+  "main": "Rest api prac.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "Node RestApiPrac.js"
+  },
+  "author": "Apoorva Raj",
+  "license": "ISC",
+  "description": ""
+}
