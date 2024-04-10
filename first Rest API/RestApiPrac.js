@@ -29,6 +29,23 @@ app.get('/api/users/:id', (req, res) => {
 })
 
 
+app.post("/api/users/", (req, res) => {
+  const body = req.body;
+  if (
+    !body ||
+    !body.firstName ||
+    !body.lastName ||
+    !body.email ||
+    !body.jobTitle ||
+    !body.gender
+  ) {
+    return res.status(400).json({ msg: "All fields are required" });
+  }
+  users.push({...body,id: users.length + 1});
+  fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+    res.status(201).json({status:"success", id: users.length});
+  });
+});
 
 
 
