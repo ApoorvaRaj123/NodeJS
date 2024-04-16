@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0"
+  },
+  "name": "mvc",
+  "version": "1.0.0",
+  "main": "mvc.js",
+  "scripts": {
+    "start": "Nodemon mvc.js"
+  },
+  "author": "Apoorva Raj",
+  "license": "ISC",
+  "description": ""
+}
